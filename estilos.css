@@ -25,6 +25,22 @@ img{
 }
 
   /* Preloader */
+
+.hidden{
+    overflow: hidden;
+}
+
+.centrado{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .lds-facebook {
     display: inline-block;
     position: relative;
@@ -110,7 +126,7 @@ nav{
 nav .enlaces a{
     display: inline-block;
     padding: 5px 0;
-    margin-right: 17px;
+    margin-right: 10px;
     font-size: 17px;
     font-weight: 300;
     text-decoration: none;
@@ -123,7 +139,7 @@ nav .enlaces a:hover{
     transition: 0.6s;
 }
 
-.logo, .logo img{ height: 80px;}
+.logo, .logo img{ height: 50px;}
 
 .icono{
     display: none;
@@ -304,6 +320,10 @@ footer{
 }
 
 .marca-logo img{
+    width: 100%;
+}
+
+.iconos{
     display: flex;
     margin: auto;
     justify-content:space-around;
@@ -315,4 +335,86 @@ footer{
     color: #fff;
     margin-bottom: var(--espacios);
     display: inline-block;
+}
+
+footer p{
+    margin-top: var(--espacios);
+}
+
+@media screen and (max-width: 700px){
+
+    .nav2{
+        color: #fff;
+    }
+
+    .icono{
+        display: block;
+        cursor: pointer;
+    }
+
+    .enlaces{
+        position: fixed;
+        top: 80px;
+        background: #2c3e50;
+        left: 0;
+        height: 100%;
+        transition: 1s;
+        width: 0;
+        overflow: hidden;
+    }
+
+    .enlaces a{
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: 20px;text-align: center;
+        background: #34495e;
+        color: #fff;
+    }
+
+    .textos>h1{font-size: 70px;}
+
+    .textos>h2{font-size: 35px;}
+
+    .content-card{
+        width: 48%;
+        margin-bottom: var(--margenes);
+    }
+
+    .caja-servicios{
+        width: 90%;
+        margin-bottom: var(--margenes);
+    }
+
+    :root{
+        --margenes: 30px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    :root{
+        --espacios-contenido: 25px;
+    }
+
+    .content-card{
+        width: 90%;
+    }
+
+    .caja-servicios{
+        width: 90%;
+        margin-bottom: var(--margenes);
+    }
+
+    .cont-work{
+        width: 85%;
+    }
+
+    .marca-logo{
+        width: 80%;
+    }
+
+    .iconos{
+        margin: auto;
+    }
 }
