@@ -180,3 +180,32 @@ nav .enlaces a:hover{
     background: var(--color1);
     margin-bottom: var(--espacios-contenido);
 }
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content-card{
+    width: 31%;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+    overflow: hidden;
+    height: 400px;
+}
+
+.people{
+    height: 80%;
+}
+
+.content-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tecto-team{
+    height: 20%;
+    width: 100%;
+    padding: var(--espacios) 0;
+}
