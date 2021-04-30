@@ -1,4 +1,4 @@
-//$(function(){alert();}); esto es una ventaniat de alerta
+//$(function(){alert();}); esto es una ventanita de alerta
 
 //Variables
 

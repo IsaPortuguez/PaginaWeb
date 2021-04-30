@@ -229,6 +229,9 @@ nav .enlaces a:hover{
 .about{
     background: url(img/teclado.jpg);
     height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .servicios{
@@ -311,6 +314,9 @@ nav .enlaces a:hover{
 
 footer{
     background: url(img/teclado.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .marca-logo{
@@ -393,6 +399,36 @@ footer p{
 }
 
 @media screen and (max-width: 500px){
+    :root{
+        --espacios-contenido: 25px;
+    }
+
+    .content-card{
+        width: 90%;
+    }
+
+    .caja-servicios{
+        width: 90%;
+        margin-bottom: var(--margenes);
+    }
+
+    .cont-work{
+        width: 85%;
+    }
+
+    .marca-logo{
+        width: 80%;
+    }
+
+    .iconos{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 365px){
+
+    .logo, .logo img{ height: 30px;}
+
     :root{
         --espacios-contenido: 25px;
     }
